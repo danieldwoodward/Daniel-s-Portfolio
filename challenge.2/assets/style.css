@@ -1,0 +1,170 @@
+:root
+{
+    --bluecoral: rgb(50, 118, 219);
+    --lightcoral: rgb(248, 197, 121);
+    --calmred: rgba(197, 67, 67, 0.788);
+}
+
+*{
+    box-sizing: border-box;
+    /* background: rgba(185, 185, 185, 0.644); */
+}
+
+
+header h1{
+    text-align: center;
+    background-color: var(--lightcoral);
+    border: black 1px solid;
+    margin: 80px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px; 
+    background-color: var(--lightcoral);
+    border: black 1px solid;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right:5%;
+    /* background-color: var(--lightcoral); */
+}
+
+nav{
+    background-color: var(--bluecoral);
+}
+
+main{
+    display: flex;
+    margin-top: 2%;
+    justify-content:space-around;
+}
+
+h2{
+    text-align: center;
+}
+
+.aside{
+    padding: 20px;
+    border-right: black 4px solid;
+    background-color: var(--calmred);
+}
+
+.aside p{
+    font-size: 200%;
+}
+
+.aside h3{
+    font-size: 250%;
+}
+
+.aside a:hover .contain-image{
+    height: 410px;
+    width:308px;
+    position: relative;
+}
+
+.image-me{
+    flex: 1 1 400px;
+    height: 700px;
+    width: 550px;
+    padding: 30px;
+    background-color: var(--calmred);
+}
+
+.meet-sec h2{
+    font-size: 300%;
+}
+
+
+.contain-image{
+    flex: 1 1 300px;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+}
+
+.mid-section{
+    display:flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 40%;
+    padding: 15px;
+    text-align: left;
+    line-height: 50px;
+    width: 15vw;
+    background-color: var(--bluecoral);
+}
+
+.mid-section h2{
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.contact-info a{
+    line-height: 40px;
+    border: black 1px solid;
+    margin: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    background: var(--calmred);
+
+}
+
+
+.span{
+    font-family: Snell Roundhand;
+}
+   
+#contactMe{
+    padding: 50px;
+    font-size: 300%;
+}
+
+#aboutMe{}
+
+#myProjects{}
+
+
+@media screen and (max-width:965px) {
+    main{
+        flex-direction: column;
+    }
+
+    .mid-section{
+        flex-direction: row;
+        width: 70vw;
+        order: 0;
+    }
+
+    .mid-section h2{
+        font-size: 25px;
+
+    }
+
+    .mid-section p{
+        margin-left: 100px;
+    }
+
+    .aside{
+        order:2;
+        margin-right: 5%;
+    }
+}
+
+
+
